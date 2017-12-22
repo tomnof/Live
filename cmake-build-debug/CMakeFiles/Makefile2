@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = C:\Users\tomnof\Desktop\git\Live\cmake-build-debug
 CMakeFiles/Live.dir/all:
 	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/depend
 	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Live"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Live"
 .PHONY : CMakeFiles/Live.dir/all
 
 # Include target in all.
@@ -75,7 +75,7 @@ all: CMakeFiles/Live.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Live.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles 10
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Live.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Live.dir/rule

@@ -7,11 +7,11 @@
 
 
 #include <vector>
-using std::vector
+using namespace std;
 
 struct TreeVector{
     int runningTime;
-    vector features;
+    vector<double> features;
 };
 
 

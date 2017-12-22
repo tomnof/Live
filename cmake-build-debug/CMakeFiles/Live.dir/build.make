@@ -56,43 +56,260 @@ include CMakeFiles/Live.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Live.dir/flags.make
 
-CMakeFiles/Live.dir/main.obj: CMakeFiles/Live.dir/flags.make
-CMakeFiles/Live.dir/main.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Live.dir/main.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\main.obj -c C:\Users\tomnof\Desktop\git\Live\main.cpp
+CMakeFiles/Live.dir/main.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/main.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/main.cpp.obj: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Live.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\main.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\main.cpp
 
-CMakeFiles/Live.dir/main.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/main.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\main.cpp > CMakeFiles\Live.dir\main.i
+CMakeFiles/Live.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/main.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\main.cpp > CMakeFiles\Live.dir\main.cpp.i
 
-CMakeFiles/Live.dir/main.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/main.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\main.cpp -o CMakeFiles\Live.dir\main.s
+CMakeFiles/Live.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/main.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\main.cpp -o CMakeFiles\Live.dir\main.cpp.s
 
-CMakeFiles/Live.dir/main.obj.requires:
+CMakeFiles/Live.dir/main.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Live.dir/main.obj.requires
+.PHONY : CMakeFiles/Live.dir/main.cpp.obj.requires
 
-CMakeFiles/Live.dir/main.obj.provides: CMakeFiles/Live.dir/main.obj.requires
-	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.obj.provides.build
-.PHONY : CMakeFiles/Live.dir/main.obj.provides
+CMakeFiles/Live.dir/main.cpp.obj.provides: CMakeFiles/Live.dir/main.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/main.cpp.obj.provides
 
-CMakeFiles/Live.dir/main.obj.provides.build: CMakeFiles/Live.dir/main.obj
+CMakeFiles/Live.dir/main.cpp.obj.provides.build: CMakeFiles/Live.dir/main.cpp.obj
+
+
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj: ../TreeDecompositionUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\TreeDecompositionUtils.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\TreeDecompositionUtils.cpp
+
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\TreeDecompositionUtils.cpp > CMakeFiles\Live.dir\TreeDecompositionUtils.cpp.i
+
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\TreeDecompositionUtils.cpp -o CMakeFiles\Live.dir\TreeDecompositionUtils.cpp.s
+
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.requires
+
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.provides: CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.provides
+
+CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.provides.build: CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj
+
+
+CMakeFiles/Live.dir/Running.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/Running.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/Running.cpp.obj: ../Running.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Live.dir/Running.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\Running.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\Running.cpp
+
+CMakeFiles/Live.dir/Running.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/Running.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\Running.cpp > CMakeFiles\Live.dir\Running.cpp.i
+
+CMakeFiles/Live.dir/Running.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/Running.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\Running.cpp -o CMakeFiles\Live.dir\Running.cpp.s
+
+CMakeFiles/Live.dir/Running.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/Running.cpp.obj.requires
+
+CMakeFiles/Live.dir/Running.cpp.obj.provides: CMakeFiles/Live.dir/Running.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/Running.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/Running.cpp.obj.provides
+
+CMakeFiles/Live.dir/Running.cpp.obj.provides.build: CMakeFiles/Live.dir/Running.cpp.obj
+
+
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj: ../dflat/DecompositionNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\dflat\DecompositionNode.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\dflat\DecompositionNode.cpp
+
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\dflat\DecompositionNode.cpp > CMakeFiles\Live.dir\dflat\DecompositionNode.cpp.i
+
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\dflat\DecompositionNode.cpp -o CMakeFiles\Live.dir\dflat\DecompositionNode.cpp.s
+
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.requires
+
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.provides: CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.provides
+
+CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.provides.build: CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj
+
+
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj: ../dflat/Decomposition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\dflat\Decomposition.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\dflat\Decomposition.cpp
+
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/dflat/Decomposition.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\dflat\Decomposition.cpp > CMakeFiles\Live.dir\dflat\Decomposition.cpp.i
+
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/dflat/Decomposition.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\dflat\Decomposition.cpp -o CMakeFiles\Live.dir\dflat\Decomposition.cpp.s
+
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.requires
+
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.provides: CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.provides
+
+CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.provides.build: CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj
+
+
+CMakeFiles/Live.dir/dflat/Solver.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/dflat/Solver.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/dflat/Solver.cpp.obj: ../dflat/Solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Live.dir/dflat/Solver.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\dflat\Solver.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\dflat\Solver.cpp
+
+CMakeFiles/Live.dir/dflat/Solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/dflat/Solver.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\dflat\Solver.cpp > CMakeFiles\Live.dir\dflat\Solver.cpp.i
+
+CMakeFiles/Live.dir/dflat/Solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/dflat/Solver.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\dflat\Solver.cpp -o CMakeFiles\Live.dir\dflat\Solver.cpp.s
+
+CMakeFiles/Live.dir/dflat/Solver.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/dflat/Solver.cpp.obj.requires
+
+CMakeFiles/Live.dir/dflat/Solver.cpp.obj.provides: CMakeFiles/Live.dir/dflat/Solver.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Solver.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/dflat/Solver.cpp.obj.provides
+
+CMakeFiles/Live.dir/dflat/Solver.cpp.obj.provides.build: CMakeFiles/Live.dir/dflat/Solver.cpp.obj
+
+
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj: ../dflat/ItemTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\dflat\ItemTree.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\dflat\ItemTree.cpp
+
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/dflat/ItemTree.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\dflat\ItemTree.cpp > CMakeFiles\Live.dir\dflat\ItemTree.cpp.i
+
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/dflat/ItemTree.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\dflat\ItemTree.cpp -o CMakeFiles\Live.dir\dflat\ItemTree.cpp.s
+
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.requires
+
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.provides: CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.provides
+
+CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.provides.build: CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj
+
+
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj: ../dflat/ItemTreeNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\dflat\ItemTreeNode.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\dflat\ItemTreeNode.cpp
+
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\dflat\ItemTreeNode.cpp > CMakeFiles\Live.dir\dflat\ItemTreeNode.cpp.i
+
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\dflat\ItemTreeNode.cpp -o CMakeFiles\Live.dir\dflat\ItemTreeNode.cpp.s
+
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.requires
+
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.provides: CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.provides
+
+CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.provides.build: CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj
+
+
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj: CMakeFiles/Live.dir/flags.make
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj: CMakeFiles/Live.dir/includes_CXX.rsp
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj: ../dflat/ExtensionIterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Live.dir\dflat\ExtensionIterator.cpp.obj -c C:\Users\tomnof\Desktop\git\Live\dflat\ExtensionIterator.cpp
+
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomnof\Desktop\git\Live\dflat\ExtensionIterator.cpp > CMakeFiles\Live.dir\dflat\ExtensionIterator.cpp.i
+
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomnof\Desktop\git\Live\dflat\ExtensionIterator.cpp -o CMakeFiles\Live.dir\dflat\ExtensionIterator.cpp.s
+
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.requires
+
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.provides: CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.provides.build
+.PHONY : CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.provides
+
+CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.provides.build: CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj
 
 
 # Object files for target Live
 Live_OBJECTS = \
-"CMakeFiles/Live.dir/main.obj"
+"CMakeFiles/Live.dir/main.cpp.obj" \
+"CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj" \
+"CMakeFiles/Live.dir/Running.cpp.obj" \
+"CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj" \
+"CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj" \
+"CMakeFiles/Live.dir/dflat/Solver.cpp.obj" \
+"CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj" \
+"CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj" \
+"CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj"
 
 # External object files for target Live
 Live_EXTERNAL_OBJECTS =
 
-Live.exe: CMakeFiles/Live.dir/main.obj
+Live.exe: CMakeFiles/Live.dir/main.cpp.obj
+Live.exe: CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj
+Live.exe: CMakeFiles/Live.dir/Running.cpp.obj
+Live.exe: CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj
+Live.exe: CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj
+Live.exe: CMakeFiles/Live.dir/dflat/Solver.cpp.obj
+Live.exe: CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj
+Live.exe: CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj
+Live.exe: CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj
 Live.exe: CMakeFiles/Live.dir/build.make
 Live.exe: CMakeFiles/Live.dir/linklibs.rsp
 Live.exe: CMakeFiles/Live.dir/objects1.rsp
 Live.exe: CMakeFiles/Live.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Live.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomnof\Desktop\git\Live\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Live.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Live.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,7 +317,15 @@ CMakeFiles/Live.dir/build: Live.exe
 
 .PHONY : CMakeFiles/Live.dir/build
 
-CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/main.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/main.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/Running.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/dflat/Solver.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj.requires
+CMakeFiles/Live.dir/requires: CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj.requires
 
 .PHONY : CMakeFiles/Live.dir/requires
 

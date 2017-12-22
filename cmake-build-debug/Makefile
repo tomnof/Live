@@ -122,20 +122,248 @@ Live/fast:
 	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/build
 .PHONY : Live/fast
 
+Running.obj: Running.cpp.obj
+
+.PHONY : Running.obj
+
 # target to build an object file
-main.obj:
-	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.obj
-.PHONY : main.obj
+Running.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/Running.cpp.obj
+.PHONY : Running.cpp.obj
+
+Running.i: Running.cpp.i
+
+.PHONY : Running.i
 
 # target to preprocess a source file
-main.i:
-	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.i
-.PHONY : main.i
+Running.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/Running.cpp.i
+.PHONY : Running.cpp.i
+
+Running.s: Running.cpp.s
+
+.PHONY : Running.s
 
 # target to generate assembly for a file
-main.s:
-	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.s
+Running.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/Running.cpp.s
+.PHONY : Running.cpp.s
+
+TreeDecompositionUtils.obj: TreeDecompositionUtils.cpp.obj
+
+.PHONY : TreeDecompositionUtils.obj
+
+# target to build an object file
+TreeDecompositionUtils.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.obj
+.PHONY : TreeDecompositionUtils.cpp.obj
+
+TreeDecompositionUtils.i: TreeDecompositionUtils.cpp.i
+
+.PHONY : TreeDecompositionUtils.i
+
+# target to preprocess a source file
+TreeDecompositionUtils.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.i
+.PHONY : TreeDecompositionUtils.cpp.i
+
+TreeDecompositionUtils.s: TreeDecompositionUtils.cpp.s
+
+.PHONY : TreeDecompositionUtils.s
+
+# target to generate assembly for a file
+TreeDecompositionUtils.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/TreeDecompositionUtils.cpp.s
+.PHONY : TreeDecompositionUtils.cpp.s
+
+dflat/Decomposition.obj: dflat/Decomposition.cpp.obj
+
+.PHONY : dflat/Decomposition.obj
+
+# target to build an object file
+dflat/Decomposition.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Decomposition.cpp.obj
+.PHONY : dflat/Decomposition.cpp.obj
+
+dflat/Decomposition.i: dflat/Decomposition.cpp.i
+
+.PHONY : dflat/Decomposition.i
+
+# target to preprocess a source file
+dflat/Decomposition.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Decomposition.cpp.i
+.PHONY : dflat/Decomposition.cpp.i
+
+dflat/Decomposition.s: dflat/Decomposition.cpp.s
+
+.PHONY : dflat/Decomposition.s
+
+# target to generate assembly for a file
+dflat/Decomposition.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Decomposition.cpp.s
+.PHONY : dflat/Decomposition.cpp.s
+
+dflat/DecompositionNode.obj: dflat/DecompositionNode.cpp.obj
+
+.PHONY : dflat/DecompositionNode.obj
+
+# target to build an object file
+dflat/DecompositionNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.obj
+.PHONY : dflat/DecompositionNode.cpp.obj
+
+dflat/DecompositionNode.i: dflat/DecompositionNode.cpp.i
+
+.PHONY : dflat/DecompositionNode.i
+
+# target to preprocess a source file
+dflat/DecompositionNode.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.i
+.PHONY : dflat/DecompositionNode.cpp.i
+
+dflat/DecompositionNode.s: dflat/DecompositionNode.cpp.s
+
+.PHONY : dflat/DecompositionNode.s
+
+# target to generate assembly for a file
+dflat/DecompositionNode.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/DecompositionNode.cpp.s
+.PHONY : dflat/DecompositionNode.cpp.s
+
+dflat/ExtensionIterator.obj: dflat/ExtensionIterator.cpp.obj
+
+.PHONY : dflat/ExtensionIterator.obj
+
+# target to build an object file
+dflat/ExtensionIterator.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.obj
+.PHONY : dflat/ExtensionIterator.cpp.obj
+
+dflat/ExtensionIterator.i: dflat/ExtensionIterator.cpp.i
+
+.PHONY : dflat/ExtensionIterator.i
+
+# target to preprocess a source file
+dflat/ExtensionIterator.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.i
+.PHONY : dflat/ExtensionIterator.cpp.i
+
+dflat/ExtensionIterator.s: dflat/ExtensionIterator.cpp.s
+
+.PHONY : dflat/ExtensionIterator.s
+
+# target to generate assembly for a file
+dflat/ExtensionIterator.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ExtensionIterator.cpp.s
+.PHONY : dflat/ExtensionIterator.cpp.s
+
+dflat/ItemTree.obj: dflat/ItemTree.cpp.obj
+
+.PHONY : dflat/ItemTree.obj
+
+# target to build an object file
+dflat/ItemTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTree.cpp.obj
+.PHONY : dflat/ItemTree.cpp.obj
+
+dflat/ItemTree.i: dflat/ItemTree.cpp.i
+
+.PHONY : dflat/ItemTree.i
+
+# target to preprocess a source file
+dflat/ItemTree.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTree.cpp.i
+.PHONY : dflat/ItemTree.cpp.i
+
+dflat/ItemTree.s: dflat/ItemTree.cpp.s
+
+.PHONY : dflat/ItemTree.s
+
+# target to generate assembly for a file
+dflat/ItemTree.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTree.cpp.s
+.PHONY : dflat/ItemTree.cpp.s
+
+dflat/ItemTreeNode.obj: dflat/ItemTreeNode.cpp.obj
+
+.PHONY : dflat/ItemTreeNode.obj
+
+# target to build an object file
+dflat/ItemTreeNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.obj
+.PHONY : dflat/ItemTreeNode.cpp.obj
+
+dflat/ItemTreeNode.i: dflat/ItemTreeNode.cpp.i
+
+.PHONY : dflat/ItemTreeNode.i
+
+# target to preprocess a source file
+dflat/ItemTreeNode.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.i
+.PHONY : dflat/ItemTreeNode.cpp.i
+
+dflat/ItemTreeNode.s: dflat/ItemTreeNode.cpp.s
+
+.PHONY : dflat/ItemTreeNode.s
+
+# target to generate assembly for a file
+dflat/ItemTreeNode.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/ItemTreeNode.cpp.s
+.PHONY : dflat/ItemTreeNode.cpp.s
+
+dflat/Solver.obj: dflat/Solver.cpp.obj
+
+.PHONY : dflat/Solver.obj
+
+# target to build an object file
+dflat/Solver.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Solver.cpp.obj
+.PHONY : dflat/Solver.cpp.obj
+
+dflat/Solver.i: dflat/Solver.cpp.i
+
+.PHONY : dflat/Solver.i
+
+# target to preprocess a source file
+dflat/Solver.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Solver.cpp.i
+.PHONY : dflat/Solver.cpp.i
+
+dflat/Solver.s: dflat/Solver.cpp.s
+
+.PHONY : dflat/Solver.s
+
+# target to generate assembly for a file
+dflat/Solver.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/dflat/Solver.cpp.s
+.PHONY : dflat/Solver.cpp.s
+
+main.obj: main.cpp.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
 .PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles\Live.dir\build.make CMakeFiles/Live.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -146,6 +374,30 @@ help:
 	@echo ... Live
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Running.obj
+	@echo ... Running.i
+	@echo ... Running.s
+	@echo ... TreeDecompositionUtils.obj
+	@echo ... TreeDecompositionUtils.i
+	@echo ... TreeDecompositionUtils.s
+	@echo ... dflat/Decomposition.obj
+	@echo ... dflat/Decomposition.i
+	@echo ... dflat/Decomposition.s
+	@echo ... dflat/DecompositionNode.obj
+	@echo ... dflat/DecompositionNode.i
+	@echo ... dflat/DecompositionNode.s
+	@echo ... dflat/ExtensionIterator.obj
+	@echo ... dflat/ExtensionIterator.i
+	@echo ... dflat/ExtensionIterator.s
+	@echo ... dflat/ItemTree.obj
+	@echo ... dflat/ItemTree.i
+	@echo ... dflat/ItemTree.s
+	@echo ... dflat/ItemTreeNode.obj
+	@echo ... dflat/ItemTreeNode.i
+	@echo ... dflat/ItemTreeNode.s
+	@echo ... dflat/Solver.obj
+	@echo ... dflat/Solver.i
+	@echo ... dflat/Solver.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
