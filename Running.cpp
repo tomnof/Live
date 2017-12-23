@@ -9,7 +9,7 @@ map<int, TreeVector> createTrainingData(vector<Graph> graphs, int numberOfTDs = 
     map<int, TreeVector> trainingData;
     int treeIndex=0;
     for(auto g : graphs){
-        vector<TreeVector> trees = createTreeVectorsPerGraph(g, numberOfTDs);
+        vector<TreeVector> trees = createTreeVectorsPerGraph(g, true, numberOfTDs);
         for(auto tree : trees){
             trainingData[treeIndex] = tree;
             treeIndex++;
@@ -18,7 +18,7 @@ map<int, TreeVector> createTrainingData(vector<Graph> graphs, int numberOfTDs = 
     return trainingData;
 }
 
-vector<TreeVector> createTreeVectorsPerGraph(Graph g, int numberOfTDs = 40, bool isTraining = true)
+vector<TreeVector> createTreeVectorsPerGraph(Graph g, bool isTraining = true, int numberOfTDs = 40)
 {
     // building numberOfTDs decomposition trees for the given graph
     vector<ITreeDecomposition> tds = generateTDsPerGraph(g,numberOfTDs);

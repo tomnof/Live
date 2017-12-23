@@ -30,7 +30,7 @@ along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 #include <gmpxx.h>
 //#include "../gmp/gmpxx.h"
 
-using std::string
+using std::string;
 
 class ExtensionIterator;
 

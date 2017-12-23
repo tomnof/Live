@@ -11,7 +11,7 @@
 #include "Graph.h"
 #include "TreeDecompositionUtils.h"
 
-using std::map
+using namespace std;
 
 // This function will receive Graphs, and will return it's training data a.k.a features vectors per TD that represent the
 // graph. This will return the features vectors for all the TDs created from the different graphs.
@@ -20,14 +20,14 @@ using std::map
 //                  each TD, or if this is not for training and there's no need for that.
 // output: key: tree index
 //				value: TreeVector containing the features vector and runningTime (if isTraining=0, runningTime=0)
-map<int, TreeVector> createTrainingData(vector<Graph> graphs, int numberOfTDs = 40, bool isTraining = true);
+map<int, TreeVector> createTrainingData(vector<Graph> graphs, int numberOfTDs);
 
 // This function will get a Graph, and will return it's TreeVector
 // input: graph,
 //		isTraining: will indicate if this is for trining ML model, hence we need to compute the real runningTime of
 //                  each TD, or if this is not for traiing and there's no need for that.
 // output: vector of TreeVector containing the features vector and runningTime (if isTraining=0, runningTime=0)
-vector<TreeVector> createTreeVectorsPerGraph(Graph g, int numberOfTDs = 40, bool isTraining = true);
+vector<TreeVector> createTreeVectorsPerGraph(Graph g, bool isTraining, int numberOfTDs);
 
 // the function will recieve traingingData, and will learn what is the best weighted vector
 // input: traingingData

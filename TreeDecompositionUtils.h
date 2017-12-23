@@ -9,8 +9,8 @@
 #include "Graph.h"
 #include "dflat/Decomposition.h"
 #include <vector>
-using std::vector
-using tdenum::Graph
+using namespace std;
+using namespace tdenum;
 
 
 // virtual function - this functhion will provide a list of TDs, based on a given Graph
@@ -31,7 +31,7 @@ double calculateTDRuntime(ITreeDecomposition t, double maxTime);
 // virtual function - this function will decide which features to use, and will extract them from the given tree
 // input: tree decomposition
 // output: a vector of the Tree features
-vector extractTDFeatures(ITreeDecomposition t);
+vector<double> extractTDFeatures(ITreeDecomposition t);
 
 DecompositionPtr transformTD(ITreeDecomposition& decomposition, const Application& app);
 

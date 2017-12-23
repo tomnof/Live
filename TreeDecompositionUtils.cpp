@@ -5,9 +5,7 @@
 #include "TreeDecompositionUtils.h"
 #include <stack>
 #include <ctime>
-using std::stack
-using std::pair
-using DecompositionNode::Bag
+using namespace std;
 
 double calculateTDRuntime(ITreeDecomposition t, double maxTime){
 
@@ -26,7 +24,7 @@ DecompositionPtr transformTd(ITreeDecomposition& decomposition, const Applicatio
 {
     // we assume that the ITreeDecomposition we received is valid
 
-    Bag rootBag(decomposition.bagContent(decomposition.root()));
+    DecompositionNode::Bag rootBag(decomposition.bagContent(decomposition.root()));
     DecompositionPtr result{new Decomposition{rootBag, app.getSolverFactory()}};
 
     // If root is a join node, maybe add post join node
@@ -41,7 +39,7 @@ DecompositionPtr transformTd(ITreeDecomposition& decomposition, const Applicatio
         DecompositionPtr parent = stack.top().second;
         stack.pop();
         for (auto TDChild : decomposition.childrenOfNode(TDparent)) {
-            Bag childBag(decomposition.bagContent(TDChild));
+            DecompositionNode::Bag childBag(decomposition.bagContent(TDChild));
             // Add post join node if necessary
             Decomposition* parentOrPostJoinNode = parent.get();
 
