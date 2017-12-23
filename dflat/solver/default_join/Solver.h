@@ -17,20 +17,28 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+#pragma once
 //}}}
-#include <string>
+//#include "../../Solver.h"
 #include <vector>
 
-#include "Solver.h"
-#include "Application.h"
-#include "Decomposition.h"
+#include "../../ItemTree.h"
+#include "../../Decomposition.h"
+namespace solver { namespace default_join {
 
-Solver::Solver(const Decomposition& decomposition, const Application& app)
-	: decomposition(decomposition)
-	, app(app)
+//class Solver : public ::Solver
+class Solver
 {
-}
+public:
+//	Solver(const Decomposition& decomposition, const Application& app, bool setLeavesToAccept);
+	Solver(bool setLeavesToAccept);
 
-Solver::~Solver()
-{
-}
+//	virtual ItemTreePtr compute() override;
+	ItemTreePtr compute(DecompositionPtr decompositionPtr);
+
+private:
+	bool setLeavesToAccept;
+};
+
+}} // namespace solver::default_join

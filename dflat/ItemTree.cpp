@@ -19,7 +19,7 @@ along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 */
 //}}}
 #include "ItemTree.h"
-#include "Application.h"
+//#include "Application.h"
 #include "ExtensionIterator.h"
 
 #ifndef NDEBUG
@@ -107,22 +107,23 @@ ItemTree::Children::const_iterator ItemTree::costChangeAfterAddChildAndMerge(Chi
 	return result.first;
 }
 
-bool ItemTree::finalize(const Application& app, bool pruneUndef, bool pruneRejecting)
-{
-	if(pruneUndef) {
-		if(node->getType() == ItemTreeNode::Type::UNDEFINED)
-			return false;
-		pruneUndefined();
-	}
+//bool ItemTree::finalize(const Application& app, bool pruneUndef, bool pruneRejecting)
+//{
+//	if(pruneUndef) {
+//		if(node->getType() == ItemTreeNode::Type::UNDEFINED)
+//			return false;
+//		pruneUndefined();
+//	}
+//
+//	if(evaluate(pruneRejecting) == ItemTreeNode::Type::REJECT)
+//		return false;
+//
+//	clearUnneededExtensionPointers(app);
+//
+//	return true;
+//}
 
-	if(evaluate(pruneRejecting) == ItemTreeNode::Type::REJECT)
-		return false;
-
-	clearUnneededExtensionPointers(app);
-
-	return true;
-}
-
+/*
 void ItemTree::printExtensions(std::ostream& os, unsigned int maxDepth, bool printCount, bool root, bool lastChild, const std::string& indent, const ExtensionIterator* parent) const
 {
 	std::unique_ptr<ExtensionIterator> it(new ExtensionIterator(*node, parent));
@@ -201,7 +202,7 @@ void ItemTree::printExtensions(std::ostream& os, unsigned int maxDepth, bool pri
 		}
 	}
 }
-
+*/
 ItemTreeNode::Type ItemTree::evaluate(bool pruneRejecting)
 {
 	// UNDEFINED nodes always evaluate to UNDEFINED and no pruning is done for their descendants
@@ -298,24 +299,24 @@ void ItemTree::pruneUndefined()
 #endif
 }
 
-void ItemTree::clearUnneededExtensionPointers(const Application& app, unsigned int currentDepth)
-{
-	if(app.isCountingDisabled()) {
-		++currentDepth;
-		if(currentDepth > app.getMaterializationDepth())
-			for(const auto& child : children)
-				child->getNode()->clearExtensionPointers();
-	}
-	else {
-		if(currentDepth > app.getMaterializationDepth())
-			for(const auto& child : children)
-				child->getNode()->clearExtensionPointers();
-		++currentDepth;
-	}
-
-	for(const auto& child : children)
-		child->clearUnneededExtensionPointers(app, currentDepth);
-}
+//void ItemTree::clearUnneededExtensionPointers(const Application& app, unsigned int currentDepth)
+//{
+//	if(app.isCountingDisabled()) {
+//		++currentDepth;
+//		if(currentDepth > app.getMaterializationDepth())
+//			for(const auto& child : children)
+//				child->getNode()->clearExtensionPointers();
+//	}
+//	else {
+//		if(currentDepth > app.getMaterializationDepth())
+//			for(const auto& child : children)
+//				child->getNode()->clearExtensionPointers();
+//		++currentDepth;
+//	}
+//
+//	for(const auto& child : children)
+//		child->clearUnneededExtensionPointers(app, currentDepth);
+//}
 
 bool ItemTree::costDifferenceSignIncrease(const ItemTreePtr& other) const
 {

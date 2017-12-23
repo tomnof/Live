@@ -25,9 +25,10 @@ along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "DirectedAcyclicGraph.h"
 #include "DecompositionNode.h"
-#include "Solver.h"
+//#include "Solver.h"
 
-class SolverFactory;
+//class SolverFactory;
+class Decomposition;
 typedef std::shared_ptr<Decomposition> DecompositionPtr;
 
 // A decomposition is a (rooted) DAG where each node corresponds to a part of the instance.
@@ -36,9 +37,10 @@ typedef std::shared_ptr<Decomposition> DecompositionPtr;
 class Decomposition : public DirectedAcyclicGraph<DecompositionNode, std::vector<DecompositionPtr>>
 {
 public:
-	Decomposition(Node&& leaf, const SolverFactory& solverFactory);
+//	Decomposition(Node&& leaf, const SolverFactory& solverFactory);
+	Decomposition(Node&& leaf);
 
-	Solver& getSolver();
+//	Solver& getSolver();
 
 	// Returns true if the node is a join node, i.e., has at least two children and all children have equal bags
 	bool isJoinNode() const;
@@ -64,8 +66,8 @@ public:
 protected:
 	void printGraphMlElements(std::ostream& out) const;
 
-	const SolverFactory& solverFactory;
-	std::unique_ptr<Solver> solver;
+//	const SolverFactory& solverFactory;
+//	std::unique_ptr<Solver> solver;
 	const Decomposition* parent;
 	bool postJoinNode;
 };

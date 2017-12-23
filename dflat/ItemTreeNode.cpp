@@ -48,6 +48,7 @@ ItemTreeNode::ItemTreeNode(Items&& items, Items&& auxItems, ExtensionPointers&& 
 	, extensionPointers(std::move(extensionPointers))
 	, type(type)
 {
+	/*
 	assert(!this->extensionPointers.empty());
 	count = 0;
 	for(const ExtensionPointerTuple& tuple : this->extensionPointers) {
@@ -74,6 +75,7 @@ ItemTreeNode::ItemTreeNode(Items&& items, Items&& auxItems, ExtensionPointers&& 
 
 	cost = type == Type::REJECT ? std::numeric_limits<decltype(cost)>::max() : 0;
 	currentCost = 0;
+	*/
 }
 
 void ItemTreeNode::setParent(const ItemTreeNode* parent)
@@ -128,7 +130,7 @@ void ItemTreeNode::setHasRejectingChild()
 {
 	hasRejectingChild = true;
 }
-
+/*
 mpz_class ItemTreeNode::countExtensions(const ExtensionIterator& parentIterator) const
 {
 	assert(parentIterator.isValid());
@@ -156,7 +158,7 @@ mpz_class ItemTreeNode::countExtensions(const ExtensionIterator& parentIterator)
 
 	return result;
 }
-
+*/
 void ItemTreeNode::merge(ItemTreeNode&& other)
 {
 	assert(items == other.items);

@@ -19,23 +19,24 @@ along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 */
 //}}}
 #include "Decomposition.h"
-#include "SolverFactory.h"
+//#include "SolverFactory.h"
 
-Decomposition::Decomposition(Node&& node, const SolverFactory& solverFactory)
+//Decomposition::Decomposition(Node&& node, const SolverFactory& solverFactory)
+Decomposition::Decomposition(Node&& node)
 	: DirectedAcyclicGraph(std::move(node))
-	, solverFactory(solverFactory)
+//	, solverFactory(solverFactory)
 	, parent(nullptr)
 	, postJoinNode(false)
 {
 }
 
-Solver& Decomposition::getSolver()
-{
-	if(!solver)
-		solver = solverFactory.newSolver(*this);
-
-	return *solver;
-}
+//Solver& Decomposition::getSolver()
+//{
+//	if(!solver)
+//		solver = solverFactory.newSolver(*this);
+//
+//	return *solver;
+//}
 
 bool Decomposition::isJoinNode() const
 {
