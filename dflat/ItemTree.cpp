@@ -25,7 +25,7 @@ along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef NDEBUG
 #include <iostream>
 #endif
-
+/*
 namespace {
 	int compareRecursively(const ItemTreePtr& lhs, const ItemTreePtr& rhs);
 
@@ -122,7 +122,7 @@ ItemTree::Children::const_iterator ItemTree::costChangeAfterAddChildAndMerge(Chi
 //
 //	return true;
 //}
-
+*/
 /*
 void ItemTree::printExtensions(std::ostream& os, unsigned int maxDepth, bool printCount, bool root, bool lastChild, const std::string& indent, const ExtensionIterator* parent) const
 {
@@ -203,6 +203,7 @@ void ItemTree::printExtensions(std::ostream& os, unsigned int maxDepth, bool pri
 	}
 }
 */
+/*
 ItemTreeNode::Type ItemTree::evaluate(bool pruneRejecting)
 {
 	// UNDEFINED nodes always evaluate to UNDEFINED and no pruning is done for their descendants
@@ -406,7 +407,7 @@ void ItemTree::merge(ItemTree&& other)
 		++it;
 	}
 }
-
+*/
 #ifndef NDEBUG
 void ItemTree::printDebug() const
 {

@@ -159,6 +159,7 @@ mpz_class ItemTreeNode::countExtensions(const ExtensionIterator& parentIterator)
 	return result;
 }
 */
+/*
 void ItemTreeNode::merge(ItemTreeNode&& other)
 {
 	assert(items == other.items);
@@ -210,7 +211,7 @@ ItemTreeNode::Items ItemTreeNode::firstExtension() const
 	}
 	return result;
 }
-
+*/
 std::ostream& operator<<(std::ostream& os, const ItemTreeNode& node)
 {
 	// Print count

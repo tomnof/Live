@@ -1,26 +1,25 @@
 #ifndef LIVE_ITreeDecomposition_H
 #define LIVE_ITreeDecomposition_H
 
-#include "Graph.h"
-using namespace tdenum;
-
 #include "dflat/DecompositionNode.h"
+#include <vector>
 
+typedef int bagId;
 class ITreeDecomposition {
 public:
 
 //    ITreeDecomposition();
-    virtual ~ITreeDecomposition();
+//    ~ITreeDecomposition();
 
     // get the TD's root index
-    virtual Node root() = 0;
+    virtual bagId root() = 0;
 
     // Access the bag content of a specific node in the TD
     // BagElement is a string representing a vertex in the original graph
-    virtual const set<DecompositionNode::BagElement> & bagContent(Node Node) const = 0;
+    virtual const set<DecompositionNode::BagElement> bagContent(bagId id) const = 0;
 
     // Access all the children of a node in the TD
-    virtual const vector<Node> childrenOfNode(Node) = 0;
+    virtual const vector<bagId> childrenOfNode(bagId id) = 0;
 };
 
 #endif // LIVE_ITreeDecomposition_H

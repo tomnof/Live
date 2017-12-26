@@ -21,10 +21,10 @@ map<int, TreeVector> createTrainingData(vector<Graph> graphs, int numberOfTDs = 
 vector<TreeVector> createTreeVectorsPerGraph(Graph g, bool isTraining = true, int numberOfTDs = 40)
 {
     // building numberOfTDs decomposition trees for the given graph
-    vector<ITreeDecomposition> tds = generateTDsPerGraph(g, numberOfTDs);
+    vector<TreeDecomposition> tds = generateTDsPerGraph(g, numberOfTDs);
 
     // extract features for each tree
-    vector<TreeVector> tdsRepresentation;
+    vector<TreeVector> tdsRepresentation(numberOfTDs);
     for(int i=0; i<numberOfTDs; i++){
         tdsRepresentation[i].features = extractTDFeatures(&tds[i]);
         // if we're on training mode - calculate the real rank of the tree by running  the solver.

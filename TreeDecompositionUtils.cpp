@@ -8,7 +8,7 @@
 #include <ctime>
 using namespace std;
 
-double calculateTDRuntime(ITreeDecomposition* treeDecomposition, double maxTime){
+double calculateTDRuntime(TreeDecomposition* treeDecomposition, double maxTime){
 
     // transform the ITreeDecomposition to DecompositionPtr to send to DFLAT solver
     // TODO: make sure that t passes with all its values. Does c++ creates a new object t when passing it to the next function?
@@ -24,10 +24,11 @@ double calculateTDRuntime(ITreeDecomposition* treeDecomposition, double maxTime)
 
     clock_t  endTime = clock();
     double durationSecs = (endTime - startTime)/ (double) CLOCKS_PER_SEC;
+    return durationSecs;
 }
 
 //DecompositionPtr transformTd(ITreeDecomposition& decomposition, const Application& app)
-DecompositionPtr transformTD(ITreeDecomposition* decomposition)
+DecompositionPtr transformTD(TreeDecomposition* decomposition)
 {
     // we assume that the ITreeDecomposition we received is valid
 
@@ -61,12 +62,14 @@ DecompositionPtr transformTD(ITreeDecomposition* decomposition)
     return result;
 }
 
-//TODO: Dvir's implementation
-vector<ITreeDecomposition> generateTDsPerGraph(Graph g, int numOfTrees){
-    return vector<ITreeDecomposition>();
+//TODO: Dvir's implementation, for now it is just a dummy one
+const vector<TreeDecomposition> generateTDsPerGraph(Graph g, int numOfTrees){
+    vector<TreeDecomposition> tds(numOfTrees);
+    tds[0]=TreeDecomposition();
+    return tds;
 }
 
 //TODO: implement
-vector<double> extractTDFeatures(ITreeDecomposition* t){
+vector<double> extractTDFeatures(TreeDecomposition* t){
     return vector<double>();
 }

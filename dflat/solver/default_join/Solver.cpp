@@ -19,6 +19,7 @@ along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 */
 //}}}
 #include <algorithm>
+#include <unistd.h>
 
 #include "Solver.h"
 //#include "../../Decomposition.h"
@@ -32,7 +33,7 @@ bool isJoinable(const ItemTreeNode& left, const ItemTreeNode& right)
 	return left.getItems() == right.getItems() &&
 		(left.getType() == ItemTreeNode::Type::UNDEFINED || right.getType() == ItemTreeNode::Type::UNDEFINED || left.getType() == right.getType());
 }
-
+/*
 ItemTreePtr join(const ItemTreePtr& left, const ItemTreePtr& right, bool setLeavesToAccept, bool optimize)
 {
 	assert(left);
@@ -174,7 +175,7 @@ join_lit_with_all_matches:
 
 	return result;
 }
-
+*/
 } // anonymous namespace
 
 namespace solver { namespace default_join {
@@ -186,6 +187,13 @@ Solver::Solver(bool setLeavesToAccept) : setLeavesToAccept(setLeavesToAccept)
 }
 
 ItemTreePtr Solver::compute(DecompositionPtr decompositionPtr)
+{
+    // dummy compute - TODO: remove
+    float sleepTime = 10000L+(long)((1e5-1e4)*rand()/(RAND_MAX+1.0));
+    usleep(sleepTime);
+    return nullptr;
+}
+/*
 {
 //	const auto nodeStackElement = app.getPrinter().visitNode(decomposition);
 
@@ -212,5 +220,5 @@ ItemTreePtr Solver::compute(DecompositionPtr decompositionPtr)
 //	app.getPrinter().solverInvocationResult(decomposition, result.get());
 	return result;
 }
-
+*/
 }} // namespace solver::default_join

@@ -27,7 +27,7 @@ along with D-FLAT.  If not, see <http://www.gnu.org/licenses/>.
 #include <map>
 #include <memory>
 #include <string>
-#include <gmpxx.h>
+//#include <gmpxx.h>
 //#include "../gmp/gmpxx.h"
 
 using std::string;
@@ -81,7 +81,7 @@ public:
 	const ItemTreeNode* getParent() const { return parent; }
 	void setParent(const ItemTreeNode*);
 
-	const mpz_class& getCount() const { return count; }
+//	const mpz_class& getCount() const { return count; }
 
 	long getCost() const { return cost; }
 	// Throws a runtime_error if this is a REJECT node.
@@ -110,7 +110,7 @@ public:
 	// This method traverses the entire decomposition.
 	// If parentIterator does not point to this node's parent, returns 0.
 	// parentIterator must be valid.
-	mpz_class countExtensions(const ExtensionIterator& parentIterator) const;
+//	mpz_class countExtensions(const ExtensionIterator& parentIterator) const;
 
 	// Unify extension pointers of this node with the other one's given that the item sets are equal.
 	// "other" will subsequently be thrown away and only "this" will be retained.
@@ -132,7 +132,7 @@ private:
 	Items auxItems;
 	ExtensionPointers extensionPointers;
 	const ItemTreeNode* parent = nullptr;
-	mpz_class count; // number of possible extensions of this node
+//	mpz_class count; // number of possible extensions of this node
 	long cost = 0;
 	long currentCost = 0;
 	Counters counters;

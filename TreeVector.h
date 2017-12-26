@@ -10,7 +10,7 @@
 using namespace std;
 
 struct TreeVector{
-    int runningTime;
+    float runningTime;
     vector<double> features;
 };
 

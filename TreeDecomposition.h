@@ -8,19 +8,18 @@
 
 #include "ITreeDecomposition.h"
 
-class TreeDecomposition :: ITreeDecomposition{
+class TreeDecomposition : public ITreeDecomposition{
 public:
 
     // get the TD's root index
-    Node root() ;
+    bagId root() override ;
 
     // Access the bag content of a specific node in the TD
     // BagElement is a string representing a vertex in the original graph
-    const set<DecompositionNode::BagElement> & bagContent(Node Node) const;
+    const set<DecompositionNode::BagElement> bagContent(bagId id) const override ;
 
     // Access all the children of a node in the TD
-    const vector<Node> childrenOfNode(Node);
-
+    const vector<bagId> childrenOfNode(bagId id) override ;
 };
 
 
